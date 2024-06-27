@@ -1,0 +1,279 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: gold;
+    background-color: #f8f8f8;
+    background-image: url('../images/grill_background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #1c1a19;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0px 40px;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+  }
+
+.logo-nav {
+    width: 10%;
+}
+
+.links-nav {width: 90%;}
+
+header .logo {
+    width: 70%;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f4d03f;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    max-width: 800px;
+    color: white;
+}
+.text-white {
+    color: white;
+}
+
+
+
+.hours-section h2 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hours-list li {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+.hours-list li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hours-list li:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hours-list li:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.hours-list li:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.hours-list li:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.hours-list li:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.hours-list li:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.hours-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reviews h4 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+    color: #1c1a19;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+ 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    color: #1c1a19;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f4d03f;
+    outline: none;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #f4d03f;
+}
+
+.login-box h1, .login-box p, #reg {
+    text-align: center;
+}
+
+#category-filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#category-filter button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#category-filter button:hover {
+    background-color: #f4d03f;
+}
+
+.contact-info {
+    background-color: hsla(0, 0%, 70%, 0.919);
+    border-radius: 20px;
+    padding: 20px;
+    width: 70%;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
