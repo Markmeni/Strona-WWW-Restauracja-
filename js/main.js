@@ -53,24 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    if (document.getElementById("menu-item-form")) {
-        document.getElementById("menu-item-form").addEventListener("submit", function(e) {
-            e.preventDefault(); 
-
-            const formData = new FormData(this);
-            fetch("add_menu_item.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                const responseMessage = document.getElementById("response-message");
-                responseMessage.textContent = data;
-                responseMessage.style.display = "block";
-                document.getElementById("menu-item-form").reset();
-            });
-        });
-    }
 });
 function filterMenu(categoryId) {
     const menuItems = document.querySelectorAll(".menu-item");
